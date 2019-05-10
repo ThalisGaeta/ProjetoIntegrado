@@ -18,6 +18,6 @@ public class ConnectionFactory {
 	    public static Connection conectar() throws SQLException {
 	        return DriverManager.getConnection
 	                ("jdbc:mysql://localhost/ProjetoIntegrado?useSSL=false" , "root",
-	                        "Tfaria@2018ç");
+	                        "1707");
 	    }
 }
