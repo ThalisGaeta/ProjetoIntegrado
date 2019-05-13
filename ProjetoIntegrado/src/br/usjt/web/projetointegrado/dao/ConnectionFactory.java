@@ -17,7 +17,7 @@ public class ConnectionFactory {
 	    }
 	    public static Connection conectar() throws SQLException {
 	        return DriverManager.getConnection
-	                ("jdbc:mysql://localhost/ProjetoIntegrado?useSSL=false" , "root",
+	                ("jdbc:mysql://localhost/projetointegrado?useSSL=false" , "root",
 	                        "1707");
 	    }
 }

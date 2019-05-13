@@ -13,7 +13,7 @@
 </ul>
 
 <ul id="alunos" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar alunos</a></li>
+	<li><a class="nav-link" href="ConsultarAlunos.jsp" id="listarTodosPage">Consultar alunos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a turma</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a grupo</a></li>
 </ul>
@@ -51,7 +51,7 @@
 </ul>
 
 <ul id="alunosMobile" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar alunos</a></li>
+	<li><a class="nav-link" href="ConsultarAlunos.jsp" id="listarTodosPage">Consultar alunos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a turma</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a grupo</a></li>
 </ul>
@@ -128,6 +128,11 @@
 			$('#menuCadastrosMobile').addClass('sublinhar');
 			$('#menuCadastros').addClass('sublinhar');
 		};
+		if(pathname.substring(18, pathname.indexOf('.')) == "ConsultarAlunos" ||
+			pathname.substring(18, pathname.indexOf('.')) == "ConsultarAlunos" ){
+			$('#menuAlunosMobile').addClass('sublinhar');
+			$('#menuAlunos').addClass('sublinhar');
+			};
 		if(pathname.substring(18, pathname.indexOf('.')) == "indexAdmin" ||
 			pathname.substring(18, pathname.indexOf('.')) == "Index"||
 			pathname.substring(18, pathname.indexOf('.')) == "Login"
