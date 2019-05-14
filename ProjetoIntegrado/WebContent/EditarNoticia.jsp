@@ -6,7 +6,7 @@
 <div class="container mt-5">
 	<div class="row justify-content-md-center espaco">
 	  	<div class="col-md-6 text-center">
-			<h4>Editar um tema</h4>
+			<h4>Editar um temas</h4>
 		</div>
 	</div>
 	<form action="ListarNoticias.do"  method="get">
