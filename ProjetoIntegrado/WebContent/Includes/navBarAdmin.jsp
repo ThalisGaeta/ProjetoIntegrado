@@ -14,7 +14,7 @@
 
 <ul id="alunos" class="dropdown-content">
 	<li><a class="nav-link" href="ConsultarAlunos.jsp" id="listarTodosPage">Consultar alunos</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a turma</a></li>
+	<li><a class="nav-link" href="VinculoAluno.jsp" id="listarTodosPage">Vincular aluno a turma</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a grupo</a></li>
 </ul>
 

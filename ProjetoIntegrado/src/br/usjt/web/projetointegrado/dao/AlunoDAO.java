@@ -4,10 +4,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import br.usjt.web.projetointegrado.dao.ConnectionFactory;
 import br.usjt.web.projetointegrado.dao.UsuarioDAO;
 import br.usjt.web.projetointegrado.model.Aluno;
+import br.usjt.web.projetointegrado.model.Noticia;
 import br.usjt.web.projetointegrado.model.Usuario;
 
 public class AlunoDAO {
@@ -61,6 +63,24 @@ private Connection conexao;
 		}else {
 			return null;
 		}
+	}
+	
+	public ArrayList<Aluno> consultarAlunos () throws SQLException {
+		String sql= "SELECT * FROM aluno";
+			ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+			Aluno aluno = new Aluno();
+			PreparedStatement ps = conexao.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while (rs.next() ){
+				Aluno alunoc = new Aluno();
+				aluno.setId_aluno(rs.getInt("id_aluno"));
+				aluno.setNome(rs.getString("nome"));
+				aluno.setEmail(rs.getString("email"));
+				aluno.setRa(rs.getString("ra"));
+				aluno.setUsuario_id(rs.getInt("usuario_id"));
+				alunos.add(alunoc);
+			}
+			return alunos;
 	}
 	
 	public void alterar(Aluno aluno) throws SQLException {
