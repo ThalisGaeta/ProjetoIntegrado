@@ -25,15 +25,15 @@
 </ul>
 
 <ul id="avaliacoes" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar avaliações semanais</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar avaliaÃ§Ãµes semanais</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliaÃ§Ãµes semanais</a></li>
 </ul>
 
 <ul id="banca" class="dropdown-content">
 	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular banca a grupos</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declaraÃ§Ãµes</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declaraÃ§Ãµes</a></li>
 </ul>
 
 <ul id="cadastrosMobile" class="dropdown-content">
@@ -63,15 +63,15 @@
 </ul>
 
 <ul id="avaliacoesMobile" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar avaliações semanais</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar avaliaÃ§Ãµes semanais</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliaÃ§Ãµes semanais</a></li>
 </ul>
 
 <ul id="bancaMobile" class="dropdown-content">
 	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular banca a grupos</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declaraÃ§Ãµes</a></li>
+	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declaraÃ§Ãµes</a></li>
 </ul>
 
 <nav class="navbar fixed-top">
@@ -129,7 +129,8 @@
 			$('#menuCadastros').addClass('sublinhar');
 		};
 		if(pathname.substring(18, pathname.indexOf('.')) == "ConsultarAlunos" ||
-			pathname.substring(18, pathname.indexOf('.')) == "ConsultarAlunos" ){
+			pathname.substring(18, pathname.indexOf('.')) == "VinculoAluno" ||
+			pathname.substring(18, pathname.indexOf('.')) == "VinculaGrupo"){
 			$('#menuAlunosMobile').addClass('sublinhar');
 			$('#menuAlunos').addClass('sublinhar');
 			};

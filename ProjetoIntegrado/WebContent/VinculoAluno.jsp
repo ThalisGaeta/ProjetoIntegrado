@@ -131,24 +131,22 @@
 				</tbody>
 			</table>
 		</div>
-
 		</div>
-		
-					<div>
-<br>
-<p class="center-align">
+		<div>
+			<br>
+			<p class="center-align">
 				<button class="btn waves-effect waves-light" type="submit"
 					name="action">
 					 <i class="material-icons center">Confirmar</i>
 				</button>
-</p>
-			</div>
-</div>
-<script>
-$(document).ready(function(){
-    $('select').formSelect();
-  });
-</script>
+			</p>
+		</div>
+		</div>
+	<script>
+		$(document).ready(function(){
+    	$('select').formSelect();
+  		});
+	</script>
 <%@include file="/Includes/FooterAdmin.jsp" %>
 </body>
 </html>
