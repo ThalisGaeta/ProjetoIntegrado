@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import br.usjt.web.projetointegrado.dao.ConnectionFactory;
 import br.usjt.web.projetointegrado.dao.UsuarioDAO;
 import br.usjt.web.projetointegrado.model.Aluno;
-import br.usjt.web.projetointegrado.model.Noticia;
 import br.usjt.web.projetointegrado.model.Usuario;
 
 public class AlunoDAO {
@@ -44,7 +43,7 @@ private Connection conexao;
 	}
 	
 	public Aluno consultar(int id) throws SQLException {
-		String sql = "SELECT * FROM aluno WHERE id_aluno = ?";
+		String sql = "SELECT * FROM aluno a inner join usuario us on a.usuario_id = us.id_usuario  WHERE id_aluno = ?";
 		
 		PreparedStatement ps = this.conexao.prepareStatement(sql);
 		
@@ -66,18 +65,17 @@ private Connection conexao;
 	}
 	
 	public ArrayList<Aluno> consultarAlunos () throws SQLException {
-		String sql= "SELECT * FROM aluno";
+		String sql= "SELECT * FROM aluno a inner join usuario us on a.usuario_id = us.id_usuario";
 			ArrayList<Aluno> alunos = new ArrayList<Aluno>();
-			Aluno aluno = new Aluno();
 			PreparedStatement ps = conexao.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next() ){
 				Aluno alunoc = new Aluno();
-				aluno.setId_aluno(rs.getInt("id_aluno"));
-				aluno.setNome(rs.getString("nome"));
-				aluno.setEmail(rs.getString("email"));
-				aluno.setRa(rs.getString("ra"));
-				aluno.setUsuario_id(rs.getInt("usuario_id"));
+				alunoc.setId_aluno(rs.getInt("id_aluno"));
+				alunoc.setNome(rs.getString("nome"));
+				alunoc.setEmail(rs.getString("email"));
+				alunoc.setRa(rs.getString("ra"));
+				alunoc.setUsuario_id(rs.getInt("usuario_id"));
 				alunos.add(alunoc);
 			}
 			return alunos;
