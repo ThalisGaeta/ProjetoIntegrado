@@ -47,7 +47,7 @@
 	<li><a class="nav-link" href="NovoTema.jsp" id="novoPage">Novo tema</a></li>
 	<li><a class="nav-link" href="EditarNoticia.jsp" id="editarPage">Editar um tema</a></li>
 	<li><a class="nav-link" href="ListarNoticias.jsp" id="listarTodosPage">Listar todos os temas</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular tema a turma</a></li>
+	<li><a class="nav-link" href="VincularTema" id="listarTodosPage">Vincular tema a turma</a></li>
 </ul>
 
 <ul id="alunosMobile" class="dropdown-content">
