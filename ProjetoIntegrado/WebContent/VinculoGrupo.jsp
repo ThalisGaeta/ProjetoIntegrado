@@ -1,31 +1,22 @@
 <%@page import="br.usjt.web.projetointegrado.dao.AlunoDAO"%>
 <%@page import="br.usjt.web.projetointegrado.model.Aluno"%>
 <%@page import="java.util.ArrayList"%>
-<%!public ArrayList<Aluno> listarAlunos(){
-	AlunoDAO dao = new AlunoDAO();
-	ArrayList<Aluno> alunos = null;
-	try{
-		alunos = dao.consultarAlunos();
-		return alunos;
-	}catch(Exception e){
-		return null;
-	}
-}%>
+
 <%@include file="/Includes/HeaderAdmin.jsp" %>
-<title>Listar Alunos</title>
+<title>Listar Grupos</title>
 </head>
 <body class="fonte">
 <%@include file="/Includes/navBarAdmin.jsp" %>
 <div class="container mt-5">
 	<div class="row justify-content-md-center espaco">
 	  	<div class="col-md-6 text-center">
-			<h4>Vincular Alunos as turmas</h4>
+			<h4>Vincular Alunos aos grupos</h4>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-3"> 
 			<select class="select-dropdown dropdown-trigger">
-				<option disabled selected>Escolha o ano</option>
+				<option disabled selected>Escolha a classe</option>
 				<option>1</option>
 				<option>2</option>
 				<option>3</option>
@@ -37,7 +28,7 @@
 		</div>
 		<div class="col-md-3 offset-md-3"> 
 			<select class="select-dropdown dropdown-trigger">
-				<option disabled selected>Escolha o semestre</option>
+				<option disabled selected>Escolha o grupo</option>
 				<option>1</option>
 				<option>2</option>
 				<option>3</option>
@@ -60,31 +51,20 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<%ArrayList<Aluno> alunos = new ArrayList<>();
-			  	alunos = listarAlunos();
-			  	if(alunos != null){
-					while(!alunos.isEmpty()){ 
-				%>
+
 				<tr>
-			      <th scope="row" class="text-center"><%out.println(alunos.get(0).getId_aluno()); %></th>
-			      <td class="text-center"><%out.println(alunos.get(0).getNome()); %></td>
-			      <td><%out.println(alunos.get(0).getRa()); %></td>
+			      <th scope="row" class="text-center"></th>
+			      <td class="text-center"></td>
+			      <td></td>
 			      <td>
-				      <form action="ListarAlunos.do" method="get" id="id2<%=alunos.get(0).getId_aluno()%>">
-				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2<%=alunos.get(0).getId_aluno()%>').submit();"></a>
-				      		<label><input type="checkbox" value="<%=alunos.get(0).getId_aluno()%>" id="codigoAluno" name="codigoAluno"> <span></span><label>
+				      <form action="ListarAlunos.do" method="get" id="id2">
+				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2').submit();"></a>
+				      		<label><input type="checkbox" value="" id="codigoAluno" name="codigoAluno"> <span></span><label>
 				      		<button type="submit" id="editarNoticia" style="display:none;"></button>
 				      </form> 
 			      </td>
 			    </tr>
-				<%alunos.remove(0);}
-				}else{
-				%>
-				<tr>
-					<th></th>
-					<th class="text-center">Nenhuma aluno cadastrado!</th>
-				</tr>
-				<%} %>
+
 				</tbody>
 			</table>
 		</div>
@@ -93,15 +73,12 @@
 			  <thead>
 			    <tr>
 			      <th scope="col">Escolha</th>
-			      <th scope="col">Turma</th>
+			      <th scope="col">Grupo</th>
 			      <th scope="col">Sigla</th>
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<%
-			  	if(alunos != null){
-					while(!alunos.isEmpty()){ 
-				%>
+
 				<tr>
 			      <th scope="row" class="text-center">
 			      	<label>
@@ -109,25 +86,18 @@
 				        <span></span>
       				</label>
       			  </th>
-			      <td class="text-center"><%out.println(alunos.get(0).getNome()); %></td>
-			      <td><%out.println(alunos.get(0).getRa()); %></td>
+			      <td class="text-center"></td>
+			      <td></td>
 			      <td>
 
-				      <form action="ListarAlunos.do" method="get" id="id2<%=alunos.get(0).getId_aluno()%>">
-				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2<%=alunos.get(0).getId_aluno()%>').submit();">edit</a>
-				      		<input type="number" style="display:none;" value="<%=alunos.get(0).getId_aluno()%>" id="codigoAluno" name="codigoAluno">
+				      <form action="ListarAlunos.do" method="get" id="id2">
+				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2').submit();">edit</a>
+				      		<input type="number" style="display:none;" value="" id="codigoAluno" name="codigoAluno">
 				      		<button type="submit" id="editarNoticia" style="display:none;"></button>
 				      </form> 
 			      </td>
 			    </tr>
-				<%alunos.remove(0);}
-				}else{
-				%>
-				<tr>
-					<th></th>
-					<th class="text-center">Nenhuma aluno cadastrado!</th>
-				</tr>
-				<%} %>
+
 				</tbody>
 			</table>
 		</div>
