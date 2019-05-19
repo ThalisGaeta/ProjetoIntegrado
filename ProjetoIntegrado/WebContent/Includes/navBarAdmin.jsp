@@ -31,7 +31,7 @@
 
 <ul id="banca" class="dropdown-content">
 	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular banca a grupos</a></li>
+	<li><a class="nav-link" href="VinculoBanca.jsp" id="listarTodosPage">Vincular banca a grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
 </ul>
@@ -69,7 +69,7 @@
 
 <ul id="bancaMobile" class="dropdown-content">
 	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular banca a grupos</a></li>
+	<li><a class="nav-link" href="VinculoBanca.jsp" id="listarTodosPage">Vincular banca a grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
 </ul>
@@ -133,6 +133,12 @@
 			pathname.substring(18, pathname.indexOf('.')) == "VinculoGrupo"){
 			$('#menuAlunosMobile').addClass('sublinhar');
 			$('#menuAlunos').addClass('sublinhar');
+			};
+		if(pathname.substring(18, pathname.indexOf('.')) == "ConsultarBanca" ||
+			pathname.substring(18, pathname.indexOf('.')) == "VinculoBanca" ||
+			pathname.substring(18, pathname.indexOf('.')) == "CadastrarDeclarações"){
+			$('#menuBancaMobile').addClass('sublinhar');
+			$('#menuBanca').addClass('sublinhar');
 			};
 		if(pathname.substring(18, pathname.indexOf('.')) == "indexAdmin" ||
 			pathname.substring(18, pathname.indexOf('.')) == "Index"||
