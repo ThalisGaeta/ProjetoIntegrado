@@ -56,7 +56,7 @@
 			      <th scope="col">R.A.</th>
 			      <th scope="col">Nome</th>
 
-			      <th scope="col">Selecionar</th>
+			      <th scope="col">Editar</th>
 			    </tr>
 			  </thead>
 			  <tbody>
