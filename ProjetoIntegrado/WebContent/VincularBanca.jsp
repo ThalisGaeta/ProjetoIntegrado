@@ -5,7 +5,7 @@
 	BancaDAO dao = new BancaDAO();
 	ArrayList<Banca> banca = null;
 	try{
-		banca = dao.consultarBanca();
+		banca = dao.consultar(id);
 		return banca;
 	}catch(Exception e){
 		return null;
@@ -60,29 +60,29 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<%ArrayList<Aluno> alunos = new ArrayList<>();
-			  	alunos = listarAlunos();
-			  	if(alunos != null){
-					while(!alunos.isEmpty()){ 
+			  	<%ArrayList<Banca> banca = new ArrayList<>();
+			  	banca = listarBanca();
+			  	if(banca != null){
+					while(!banca.isEmpty()){ 
 				%>
 				<tr>
-			      <th scope="row" class="text-center"><%out.println(alunos.get(0).getId_aluno()); %></th>
-			      <td class="text-center"><%out.println(alunos.get(0).getNome()); %></td>
-			      <td><%out.println(alunos.get(0).getRa()); %></td>
+			      <th scope="row" class="text-center"><%out.println(banca.get(0).getId_banca()); %></th>
+			      <td class="text-center"><%out.println(banca.get(0).getNome()); %></td>
+			      <td><%out.println(banca.get(0).getRa()); %></td>
 			      <td>
-				      <form action="ListarAlunos.do" method="get" id="id2<%=alunos.get(0).getId_aluno()%>">
-				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2<%=alunos.get(0).getId_aluno()%>').submit();"></a>
-				      		<label><input type="checkbox" value="<%=alunos.get(0).getId_aluno()%>" id="codigoAluno" name="codigoAluno"> <span></span><label>
+				      <form action="ListarAlunos.do" method="get" id="id2<%=banca.get(0).getId_banca()%>">
+				      		<a href="#!" class="material-icons corA" onClick="document.getElementById('id2<%=banca.get(0).getId_banca()%>').submit();"></a>
+				      		<label><input type="checkbox" value="<%=banca.get(0).getId_banca()%>" id="codigoAluno" name="codigoAluno"> <span></span><label>
 				      		<button type="submit" id="editarNoticia" style="display:none;"></button>
 				      </form> 
 			      </td>
 			    </tr>
-				<%alunos.remove(0);}
+				<%banca.remove(0);}
 				}else{
 				%>
 				<tr>
 					<th></th>
-					<th class="text-center">Nenhuma aluno cadastrado!</th>
+					<th class="text-center">Nenhuma banca cadastrada!</th>
 				</tr>
 				<%} %>
 				</tbody>
