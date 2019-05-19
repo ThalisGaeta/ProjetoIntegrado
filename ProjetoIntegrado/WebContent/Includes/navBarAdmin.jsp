@@ -15,7 +15,7 @@
 <ul id="alunos" class="dropdown-content">
 	<li><a class="nav-link" href="ConsultarAlunos.jsp" id="listarTodosPage">Consultar alunos</a></li>
 	<li><a class="nav-link" href="VinculoAluno.jsp" id="listarTodosPage">Vincular aluno a turma</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a grupo</a></li>
+	<li><a class="nav-link" href="VinculoGrupo.jsp" id="listarTodosPage">Vincular aluno a grupo</a></li>
 </ul>
 
 <ul id="grupos" class="dropdown-content">
@@ -52,9 +52,9 @@
 
 <ul id="alunosMobile" class="dropdown-content">
 	<li><a class="nav-link" href="ConsultarAlunos.jsp" id="listarTodosPage">Consultar alunos</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a turma</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Vincular aluno a grupo</a></li>
-</ul>
+	<li><a class="nav-link" href="VinculoAluno.jsp" id="listarTodosPage">Vincular aluno a turma</a></li>
+	<li><a class="nav-link" href="VinculoGrupo.jsp" id="listarTodosPage">Vincular aluno a grupo</a></li>
+</ul>/
 
 <ul id="gruposMobile" class="dropdown-content">
 	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar grupos</a></li>
@@ -130,7 +130,7 @@
 		};
 		if(pathname.substring(18, pathname.indexOf('.')) == "ConsultarAlunos" ||
 			pathname.substring(18, pathname.indexOf('.')) == "VinculoAluno" ||
-			pathname.substring(18, pathname.indexOf('.')) == "VinculaGrupo"){
+			pathname.substring(18, pathname.indexOf('.')) == "VinculoGrupo"){
 			$('#menuAlunosMobile').addClass('sublinhar');
 			$('#menuAlunos').addClass('sublinhar');
 			};
