@@ -19,7 +19,7 @@
 </ul>
 
 <ul id="grupos" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar grupos</a></li>
+	<li><a class="nav-link" href="ConsultarGrupos.jsp" id="listarTodosPage">Consultar grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Ver notas dos grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Ver entregas dos grupos</a></li>
 </ul>
@@ -57,7 +57,7 @@
 </ul>/
 
 <ul id="gruposMobile" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar grupos</a></li>
+	<li><a class="nav-link" href="ConsultarGrupos.jsp" id="listarTodosPage">Consultar grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Ver notas dos grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Ver entregas dos grupos</a></li>
 </ul>
