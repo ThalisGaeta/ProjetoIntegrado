@@ -14,7 +14,6 @@
 }
 %>
 <%@include file="/Includes/header.jsp" %>
-<title>Minha pagina</title>
 <title>Real News</title>
 </head>
 <body class="fonte">
