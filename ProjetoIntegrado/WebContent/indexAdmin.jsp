@@ -6,6 +6,7 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css'>
 	<body class="fonte">
 	<%@include file="/Includes/navBarAdmin.jsp" %>
+
 <script>
   window.console = window.console || function(t) {};
 </script>
@@ -34,7 +35,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
-<script type="text/javascript" charset="utf-8"  src="Includes/fullcalendar.min.js"></script>
+<script type="text/javascript" src="Includes/fullcalendar.min.js"></script>
 <script id="rendered-js">
       $(document).ready(function () {
 
