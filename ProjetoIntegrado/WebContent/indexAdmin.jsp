@@ -30,8 +30,7 @@
 </div>
 </div>
 </div>
-<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
+<script charset="utf-8" src="Includes/moment.min.js"></script>
 <script charset="utf-8" src="Includes/fullcalendar.min.js"></script>
 <script id="rendered-js">
       $(document).ready(function () {
