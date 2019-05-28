@@ -30,7 +30,7 @@
 </ul>
 
 <ul id="banca" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
+	<li><a class="nav-link" href="ConsultarBancas.jsp" id="listarTodosPage">Consultar bancas</a></li>
 	<li><a class="nav-link" href="VinculoBanca.jsp" id="listarTodosPage">Vincular banca a grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
@@ -68,7 +68,7 @@
 </ul>
 
 <ul id="bancaMobile" class="dropdown-content">
-	<li><a class="nav-link" href="#" id="listarTodosPage">Consultar bancas</a></li>
+	<li><a class="nav-link" href="ConsultarBancas.jsp" id="listarTodosPage">Consultar bancas</a></li>
 	<li><a class="nav-link" href="VinculoBanca.jsp" id="listarTodosPage">Vincular banca a grupos</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar declarações</a></li>
 	<li><a class="nav-link" href="#" id="listarTodosPage">Gerar declarações</a></li>
