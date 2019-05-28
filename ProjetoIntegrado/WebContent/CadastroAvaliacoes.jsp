@@ -1,5 +1,5 @@
 <%@include file="/Includes/HeaderAdmin.jsp" %>
-<%@page import="br.usjt.web.projetointegrado.model.Usuario"%>
+<%@page import="br.usjt.web.projetointegrado.model.Avaliacao"%>
 <title>Cadastrar avaliações</title>
 </head>
 <body class="fonte">
