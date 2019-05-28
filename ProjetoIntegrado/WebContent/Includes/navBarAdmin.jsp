@@ -25,8 +25,8 @@
 </ul>
 
 <ul id="avaliacoes" class="dropdown-content">
-	<li><a class="nav-link" href="ConsultarAvalia��es.jsp" id="listarTodosPage">Consultar avaliações semanais</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
+	<li><a class="nav-link" href="ConsultarAvaliacoes.jsp" id="listarTodosPage">Consultar avaliações semanais</a></li>
+	<li><a class="nav-link" href="CadastroAvaliacao.jsp" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
 </ul>
 
 <ul id="banca" class="dropdown-content">
@@ -63,8 +63,8 @@
 </ul>
 
 <ul id="avaliacoesMobile" class="dropdown-content">
-	<li><a class="nav-link" href="ConsultarAvalia��es.jsp" id="listarTodosPage">Consultar avaliações semanais</a></li>
-	<li><a class="nav-link" href="#" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
+	<li><a class="nav-link" href="ConsultarAvaliacoes.jsp" id="listarTodosPage">Consultar avaliações semanais</a></li>
+	<li><a class="nav-link" href="CadastroAvaliacao.jsp" id="listarTodosPage">Cadastrar avaliações semanais</a></li>
 </ul>
 
 <ul id="bancaMobile" class="dropdown-content">
